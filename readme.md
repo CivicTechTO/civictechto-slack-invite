@@ -90,17 +90,17 @@ https://civictechto-slack-invite.herokuapp.com/
    [CivicTechTO Services Inventory](https://hackmd.io/s/SJcySi2db) to
 figure out who to ask. Anyone with current access can give you your
 own access.
-2. Make the change on the `develop/civictechto` branch of this code repository.
+2. **Make the change** on the `develop/civictechto` branch of this code repository.
    Pull requests are preferred, so that someone else can review the
 change.
-3. Once your change is on `develop/civictechto`, you can push to heroku via
-   Git, from your local workstation:
+3. Once your change is committed to the `develop/civictechto` branch, you can **push to Heroku via
+   Git**, from your local workstation:
 
         git remote add heroku https://git.heroku.com/civictechto-slack-invite.git
         git push heroku develop/civictechto:master
 
 4. You should see the deploy process from the command-line, and when
-   it's done, your change will be live!
+   it's done, **your change will be live!**
 
 ## Caught a Bug?
 
