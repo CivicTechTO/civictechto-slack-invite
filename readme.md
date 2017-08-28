@@ -1,5 +1,11 @@
 ![](https://github.com/zeit/art/blob/e081cf46e6609b51ac485dcc337ac6644c0da5e7/slackin/repo-banner.png)
 
+
+### About this Fork
+
+The purpose of this fork is to add [documentation for how to
+deploy](#civictechto-deployment) CivicTechTO's instance of this app.
+
 ## Features
 
 - A landing page you can point users to fill in their emails and receive an invite (`https://slack.yourdomain.com`)
@@ -74,6 +80,27 @@ slackin.default({
 This will show response times from Slack and how many online users you have on the console. The returned `http.Server` has an `app` property that is the `express` application that you can define or override routes on.
 
 All the metadata for your organization can be fetched via a JSON HTTP request to `/data`.
+
+## CivicTechTO Deployment
+
+We use Heroku to host our app:
+https://civictechto-slack-invite.herokuapp.com/
+
+1. **Get access** to the Heroku app. See the "Heroku" entry in the
+   [CivicTechTO Services Inventory](https://hackmd.io/s/SJcySi2db) to
+figure out who to ask. Anyone with current access can give you your
+own access.
+2. Make the change on the `develop/civictechto` branch of this code repository.
+   Pull requests are preferred, so that someone else can review the
+change.
+3. Once your change is on `develop/civictechto`, you can push to heroku via
+   Git, from your local workstation:
+
+        git remote add heroku https://git.heroku.com/civictechto-slack-invite.git
+        git push heroku develop/civictechto:master
+
+4. You should see the deploy process from the command-line, and when
+   it's done, your change will be live!
 
 ## Caught a Bug?
 
